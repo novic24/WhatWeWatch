@@ -4,11 +4,20 @@ import Row from "./Row";
 import Banner from "./Banner";
 
 import requests from "./request";
+import Statistics from "./Statistics";
 
 function App() {
   return (
     <div className="app">
-      <h1>WhatWeWatch</h1>
+      <div className="app-menu">
+        <h1>W h a t W e W a t c h</h1>
+        <button className="app__button">Login</button>
+        <button className="app__button">Register</button>
+        <button className="app__button">Settings</button>
+        <button className="app__button">My profile</button>
+      </div>
+
+      <Statistics></Statistics>
       <Banner></Banner>
       <Row
         title="Trending Now"
